@@ -12,6 +12,8 @@ build/
 develop-eggs/
 dist/
 downloads/
+temp_audio/
+temp_video/
 eggs/
 .eggs/
 lib/

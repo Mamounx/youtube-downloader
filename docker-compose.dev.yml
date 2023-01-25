@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  youtube-downloader:
+    image: youtube-downloader
+    build:
+      context: .
+      args:
+        - VIDEO=https://www.youtube.com/watch?v=6euC2PqutvM
+        # - PLAYLIST=
+        # - RESOLUTION=
+    volumes:
+      - "/downloads:/downloads"
+      - "/temp_video:/temp_video"
+      - "/temp_audio:/temp_audio"
